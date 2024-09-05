@@ -20,3 +20,12 @@ logs/
 # IDE settings
 .vscode/
 .idea/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter notebooks
+.ipynb_checkpoints/
