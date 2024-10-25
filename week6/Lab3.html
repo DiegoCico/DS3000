@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>HW3</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>Lab3</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7510,86 +7510,244 @@ a.anchor-link {
 <!-- End of mermaid configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 <main>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=e52a63c5-8632-42cf-a598-1f9b9fcf118e">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="DS-3000-HW-3">DS 3000 HW 3<a class="anchor-link" href="#DS-3000-HW-3">¶</a></h1>
+<h1 id="Lab-3-(Due-@-by-11:59-pm-via-Canvas/Gradescope)">Lab 3 (Due @ by 11:59 pm via Canvas/Gradescope)<a class="anchor-link" href="#Lab-3-(Due-@-by-11:59-pm-via-Canvas/Gradescope)">¶</a></h1>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=5a4381c6-9601-4e78-806e-2c06d0aaea20">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Your Name:  Diego Cicotoste</p>
+<p>Your Name: Diego Cicotoste</p>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=036f3831-9eab-4c04-a0e5-dbe043d32320">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Due: Tuesday Oct 29 @ 11:59 PM EST</p>
-<p>Extra Credit Deadline: Sunday Oct 27 @ 11:59 PM EST</p>
+<p>Due: Wednesday or Thursday, Oct. 23/24 @ 11:59 pm</p>
 <h3 id="Submission-Instructions">Submission Instructions<a class="anchor-link" href="#Submission-Instructions">¶</a></h3><p>Submit this <code>ipynb</code> file to Gradescope (this can also be done via the assignment on Canvas).  To ensure that your submitted <code>ipynb</code> file represents your latest code, make sure to give a fresh <code>Kernel &gt; Restart &amp; Run All</code> just before uploading the <code>ipynb</code> file to gradescope. <strong>In addition:</strong></p>
 <ul>
 <li>Make sure your name is entered above</li>
 <li>Make sure you comment your code effectively</li>
 <li>If problems are difficult for the TAs/Profs to grade, you will lose points</li>
 </ul>
+<h3 id="Special-Note-for-This-Lab">Special Note for This Lab<a class="anchor-link" href="#Special-Note-for-This-Lab">¶</a></h3><p>There are "handwritten" parts of this lab. You must show all math work/steps (no matter how trivial) to receive full credit. You may either use LaTeX typesetting within a Markdown cell, or do it by hand with pen and paper and embed the image in this .ipynb file, or submit a separate pdf file with your handwritten work. Round all decimals to three places.</p>
 <h3 id="Tips-for-success">Tips for success<a class="anchor-link" href="#Tips-for-success">¶</a></h3><ul>
-<li>Start early</li>
-<li>Make use of Piazza (also accessible through Canvas)</li>
-<li>Make use of Office Hours</li>
-<li>Remember to use cells and headings to make the notebook easy to read (if a grader cannot find the answer to a problem, you will receive no points for it)</li>
-<li>Under no circumstances may one student view or share their ungraded homework or quiz with another student <a href="http://www.northeastern.edu/osccr/academic-integrity">(see also)</a>, though you are welcome to <strong>talk about</strong> (<em>not</em> show each other your answers to) the problems.</li>
+<li>Collaborate: bounce ideas off of each other, if you are having trouble you can ask your classmates or Dr. Gerber for help with specific issues, however...</li>
+<li>Under no circumstances may one student view or share their ungraded homework or quiz with another student <a href="http://www.northeastern.edu/osccr/academic-integrity">(see also)</a>, i.e. you are welcome to <strong>talk about</strong> (<em>not</em> show each other your answers to) the problems.</li>
 </ul>
 </div>
 </div>
 </div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=128c2500-de83-4732-a3ac-78ccdd6094f2">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># you might use the below modules on this lab</span>
+<span class="kn">import</span> <span class="nn">warnings</span>
+<span class="n">warnings</span><span class="o">.</span><span class="n">simplefilter</span><span class="p">(</span><span class="n">action</span><span class="o">=</span><span class="s1">'ignore'</span><span class="p">,</span> <span class="n">category</span><span class="o">=</span><span class="ne">FutureWarning</span><span class="p">)</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">plotly.express</span> <span class="k">as</span> <span class="nn">px</span>
+<span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="o">*</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=d197c58c-8285-446e-bb07-347de63ce276">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Part-1:-Summarizing-and-Visualizing-Data">Part 1: Summarizing and Visualizing Data<a class="anchor-link" href="#Part-1:-Summarizing-and-Visualizing-Data">¶</a></h1><p>For this part, you will use the <code>players_fifa23.csv</code> from Canvas to investigate the ratings for soccer players in the FIFA 23 video game. Make sure the <code>.csv</code> is in the same directory as this notebook file.</p>
-<p><strong>Note</strong>: You do not need to know anything about soccer or video games to complete this problem, only perhaps that a higher <code>Overall</code> rating is considered a good thing.</p>
+<h2 id="Part-1:-Eigenvalues-&amp;-Eigenvectors">Part 1: Eigenvalues &amp; Eigenvectors<a class="anchor-link" href="#Part-1:-Eigenvalues-&amp;-Eigenvectors">¶</a></h2><h2 id="Part-1.1:-Computation-by-hand-(30-Points)">Part 1.1: Computation by hand (30 Points)<a class="anchor-link" href="#Part-1.1:-Computation-by-hand-(30-Points)">¶</a></h2><p>Show all math work/steps (no matter how trivial) to receive full credit. You may either use LaTeX typesetting within a Markdown cell, or do it by hand with pen and paper and embed the image in this .ipynb file, or submit a separate pdf file with your handwritten work. Round all decimals to three places.</p>
+<p>Find the eigenvalues and eigenvectors for the following matrices by hand:</p>
+<p>a) $$A = \begin{bmatrix}
+    2 &amp; -2 \\ -1 &amp; 3
+\end{bmatrix}$$</p>
+<p>b) $$B = \begin{bmatrix}
+    7 &amp; 3 \\ 3 &amp; -1
+\end{bmatrix}$$</p>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=d77c1665-8a94-42ea-b846-86a1d7246426">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Part-1.1:-Plotting-Data-(15-points)">Part 1.1: Plotting Data (15 points)<a class="anchor-link" href="#Part-1.1:-Plotting-Data-(15-points)">¶</a></h2><p>Create a plotly scatter plot which shows the mean <code>Overall</code> rating for soccer players (rows) of a given <code>Nationality</code> for a particular <code>Age</code>. Focuse on three countries (<code>England</code>, <code>Germany</code>, <code>Spain</code>). In other words, your plot's x-axis should be <code>Age</code>, the y-axis should be <code>Overall</code>, and there should be three different colored points at each <code>Age</code>, one for each <code>Nationality</code>.</p>
-<p>Export your graph as an html file <code>age_ratings_nationality.html</code>. You do not have to submit it with this homework, but the code should show that you did this.</p>
-<p>Hints:</p>
-<ul>
-<li>There may be multiple ways/approaches to accomplish this task.</li>
-<li>One approach: you may use <code>groupby()</code> and boolean indexing to build these values in a loop which runs per each <code>Nationality</code>.</li>
-<li><code>px.scatter()</code> will only graph data from columns (not the index).  Some approaches may need to graph data from the index.  You can use <a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.reset_index.html">df.reset_index()</a> to make your index a new column as shown <a href="https://colab.research.google.com/drive/1d9JDphmpSTg9NtFMyfFnMQ6RmIx6zChK?usp=sharing">in this example</a></li>
-<li>In some approaches you may need to pass multiple rows to <a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.append.html">df.append()</a> if need be as shown <a href="https://colab.research.google.com/drive/1XbBHMcYq_2Q225nkKs3j06iigCQGmM4H?usp=sharing">in this example</a></li>
-<li>In some approaches you may need to go from "wide" data to "long" data by using <a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.melt.html">df.melt()</a> as discussed <a href="https://towardsdatascience.com/reshaping-a-pandas-dataframe-long-to-wide-and-vice-versa-517c7f0995ad">here</a></li>
-<li>The first few code cells below get you started with looking at the data set.</li>
-</ul>
+<p><img alt="alt text" src="1.PNG"/>
+<img alt="alt text" src="2.PNG"/>
+<img alt="alt text" src="3.PNG"/>
+<img alt="alt text" src="4.PNG"/></p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=f6411d47-0169-4164-8a40-ebe7c52fefe3">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Part-1.2:-Computation-using-numpy-(20-Points)">Part 1.2: Computation using <code>numpy</code> (20 Points)<a class="anchor-link" href="#Part-1.2:-Computation-using-numpy-(20-Points)">¶</a></h2><p>Now for each of the above matrices, using <code>numpy</code> find their eigenvalues and eigenvectors:</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=4540abd3-3cb4-448e-87de-6ed9a389cbf7">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">]])</span>
+<span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">]])</span>
+<span class="n">eigenvalues_A</span><span class="p">,</span> <span class="n">eigenvectors_A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">eig</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+<span class="n">eigenvalues_B</span><span class="p">,</span> <span class="n">eigenvectors_B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">eig</span><span class="p">(</span><span class="n">B</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Eigenvalues of A:"</span><span class="p">,</span> <span class="n">eigenvalues_A</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Eigenvectors of A:</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="n">eigenvectors_A</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Eigenvalues of B:"</span><span class="p">,</span> <span class="n">eigenvalues_B</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Eigenvectors of B:</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="n">eigenvectors_B</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Eigenvalues of A: [1. 4.]
+Eigenvectors of A:
+ [[-0.89442719  0.70710678]
+ [-0.4472136  -0.70710678]]
+Eigenvalues of B: [ 8. -2.]
+Eigenvectors of B:
+ [[ 0.9486833  -0.31622777]
+ [ 0.31622777  0.9486833 ]]
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=6635e0eb-17e5-41c0-a17d-5589994f406b">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="Part-2:-Projections/Line-of-Best-Fit">Part 2: Projections/Line of Best Fit<a class="anchor-link" href="#Part-2:-Projections/Line-of-Best-Fit">¶</a></h1><h2 id="Part-2.1:-2-d-Projection-by-hand-(25-points)">Part 2.1: 2-d Projection by hand (25 points)<a class="anchor-link" href="#Part-2.1:-2-d-Projection-by-hand-(25-points)">¶</a></h2><p>Show all math work/steps (no matter how trivial) to receive full credit. You may either use LaTeX typesetting within a Markdown cell, or do it by hand with pen and paper and embed the image in this .ipynb file, or submit a separate pdf file with your handwritten work. Round all decimals to three places.</p>
+<p>Find the projection of vector $\vec{a}$ onto vector $\vec{b}$:</p>
+<p>$$\vec{a} = \begin{bmatrix}
+    -4 \\ 1
+\end{bmatrix}$$</p>
+<p>$$\vec{b} = \begin{bmatrix}
+    1 \\ 2
+\end{bmatrix}$$</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=4760f731-4cdb-4bdf-9688-87fef46bb493">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=180c3ae8-c192-401b-a4fe-7bf1ba6327f8">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Part-2.2:-Line-of-Best-Fit-using-numpy">Part 2.2: Line of Best Fit using <code>numpy</code><a class="anchor-link" href="#Part-2.2:-Line-of-Best-Fit-using-numpy">¶</a></h2><p>Now, let's extend this to a real data example. On Canvas there is the <code>big_recipe.csv</code> in the Labs Module, which contains a recipe data set that we scraped earlier in the semester. For this last part, we will try to answer the question "How would we mathematically quantify the linear relationship between Cholesterol and Total Fat in these recipes?"</p>
+<h3 id="Part-2.2.1:-Exploring-Data-(5-points)">Part 2.2.1: Exploring Data (5 points)<a class="anchor-link" href="#Part-2.2.1:-Exploring-Data-(5-points)">¶</a></h3><p>The data are read in for you, and a plot is made below. In a markdown cell, explain why you would or would not think that fitting a straight line to model this relationship makes sense.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=013db860-c48a-4981-88c0-d57ccd28c885">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">recipe_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'big_recipe.csv'</span><span class="p">)</span>
+
+<span class="n">px</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">data_frame</span><span class="o">=</span><span class="n">recipe_df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">'Cholesterol'</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">'Total Fat'</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'query'</span><span class="p">,</span> <span class="n">hover_data</span><span class="o">=</span><span class="p">[</span><span class="s1">'name'</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=22633583-31ee-4645-9256-7c4013941bbf">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Adding a straight line to show the relationship of both cholesterol and total fat could make sense because they are often correlated in high-fat recipes. However, some other variables for example plant-based or animal-based fats may cause outliers. Therefore, while a linear model could provide a good approximation, it may oversimplify the complex relationship between these two variables.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=1cb72f55-0380-4a94-9e52-7677ee40efd7">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Part-2.2.2:-Preparing-Data-(5-points)">Part 2.2.2: Preparing Data (5 points)<a class="anchor-link" href="#Part-2.2.2:-Preparing-Data-(5-points)">¶</a></h3><p>In order to fit the line of best fit through these points using NumPy, we need to store the data as vectors/matrices (arrays) in NumPy. The code below does that. Explain in a markdown cell why we are storing Cholesterol in a matrix called $X$ with an additional column of 1s.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=51f6a108-99c4-4742-9e31-3e60d048c685">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7597,12 +7755,9 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># use pandas to read in the data</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">plotly.express</span> <span class="k">as</span> <span class="nn">px</span>
-
-<span class="n">df_fifa</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'players_fifa23.csv'</span><span class="p">,</span> <span class="n">index_col</span> <span class="o">=</span> <span class="s1">'ID'</span><span class="p">)</span>
-<span class="n">df_fifa</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="n">recipe_df</span><span class="p">[</span><span class="s1">'Total Fat'</span><span class="p">]</span><span class="o">.</span><span class="n">to_numpy</span><span class="p">()</span> <span class="c1"># creates the vector y</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">vstack</span><span class="p">([</span><span class="n">recipe_df</span><span class="o">.</span><span class="n">Cholesterol</span><span class="o">.</span><span class="n">to_numpy</span><span class="p">(),</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">recipe_df</span><span class="o">.</span><span class="n">Cholesterol</span><span class="p">))])</span><span class="o">.</span><span class="n">T</span> <span class="c1"># creates the matrix X</span>
+<span class="n">X</span><span class="p">[:</span><span class="mi">6</span><span class="p">,:]</span> <span class="c1"># prints the first six rows of the matrix X</span>
 </pre></div>
 </div>
 </div>
@@ -7614,202 +7769,44 @@ a.anchor-link {
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
-<div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-<thead>
-<tr style="text-align: right;">
-<th></th>
-<th>Name</th>
-<th>FullName</th>
-<th>Age</th>
-<th>Height</th>
-<th>Weight</th>
-<th>PhotoUrl</th>
-<th>Nationality</th>
-<th>Overall</th>
-<th>Potential</th>
-<th>Growth</th>
-<th>...</th>
-<th>LMRating</th>
-<th>CMRating</th>
-<th>RMRating</th>
-<th>LWBRating</th>
-<th>CDMRating</th>
-<th>RWBRating</th>
-<th>LBRating</th>
-<th>CBRating</th>
-<th>RBRating</th>
-<th>GKRating</th>
-</tr>
-<tr>
-<th>ID</th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<th>165153</th>
-<td>K. Benzema</td>
-<td>Karim Benzema</td>
-<td>34</td>
-<td>185</td>
-<td>81</td>
-<td>https://cdn.sofifa.net/players/165/153/23_60.png</td>
-<td>France</td>
-<td>91</td>
-<td>91</td>
-<td>0</td>
-<td>...</td>
-<td>89</td>
-<td>84</td>
-<td>89</td>
-<td>67</td>
-<td>67</td>
-<td>67</td>
-<td>63</td>
-<td>58</td>
-<td>63</td>
-<td>21</td>
-</tr>
-<tr>
-<th>158023</th>
-<td>L. Messi</td>
-<td>Lionel Messi</td>
-<td>35</td>
-<td>169</td>
-<td>67</td>
-<td>https://cdn.sofifa.net/players/158/023/23_60.png</td>
-<td>Argentina</td>
-<td>91</td>
-<td>91</td>
-<td>0</td>
-<td>...</td>
-<td>91</td>
-<td>88</td>
-<td>91</td>
-<td>67</td>
-<td>66</td>
-<td>67</td>
-<td>62</td>
-<td>53</td>
-<td>62</td>
-<td>22</td>
-</tr>
-<tr>
-<th>231747</th>
-<td>K. Mbappé</td>
-<td>Kylian Mbappé</td>
-<td>23</td>
-<td>182</td>
-<td>73</td>
-<td>https://cdn.sofifa.net/players/231/747/23_60.png</td>
-<td>France</td>
-<td>91</td>
-<td>95</td>
-<td>4</td>
-<td>...</td>
-<td>92</td>
-<td>84</td>
-<td>92</td>
-<td>70</td>
-<td>66</td>
-<td>70</td>
-<td>66</td>
-<td>57</td>
-<td>66</td>
-<td>21</td>
-</tr>
-<tr>
-<th>192985</th>
-<td>K. De Bruyne</td>
-<td>Kevin De Bruyne</td>
-<td>31</td>
-<td>181</td>
-<td>70</td>
-<td>https://cdn.sofifa.net/players/192/985/23_60.png</td>
-<td>Belgium</td>
-<td>91</td>
-<td>91</td>
-<td>0</td>
-<td>...</td>
-<td>91</td>
-<td>91</td>
-<td>91</td>
-<td>82</td>
-<td>82</td>
-<td>82</td>
-<td>78</td>
-<td>72</td>
-<td>78</td>
-<td>24</td>
-</tr>
-<tr>
-<th>188545</th>
-<td>R. Lewandowski</td>
-<td>Robert Lewandowski</td>
-<td>33</td>
-<td>185</td>
-<td>81</td>
-<td>https://cdn.sofifa.net/players/188/545/23_60.png</td>
-<td>Poland</td>
-<td>91</td>
-<td>91</td>
-<td>0</td>
-<td>...</td>
-<td>86</td>
-<td>83</td>
-<td>86</td>
-<td>67</td>
-<td>69</td>
-<td>67</td>
-<td>64</td>
-<td>63</td>
-<td>64</td>
-<td>22</td>
-</tr>
-</tbody>
-</table>
-<p>5 rows × 89 columns</p>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>array([[142.,   1.],
+       [218.,   1.],
+       [ 99.,   1.],
+       [ 44.,   1.],
+       [100.,   1.],
+       [112.,   1.]])</pre>
 </div>
 </div>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=13f5d6b4-f82a-4951-af7a-e748a0ef9397">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>The Cholesterol in a matrix X is being stored in the first column to facilitate the linear regression calculation. in the second column represents the intercept in the linear model. This way it allows for us to solve for both the slope and the intercept of the line of best fit. Where we could use <em>y=mx+b</em> with mx being the slope and b being the intercept. Without the additional column we would only calculate the slope and not the intercept, therefore, being an incomplete model.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=481f42cc-fa4b-48ec-8963-c0ba32151775">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Part-2.2.3:-Fitting-the-Line-of-best-fit-(15-points)">Part 2.2.3: Fitting the Line of best fit (15 points)<a class="anchor-link" href="#Part-2.2.3:-Fitting-the-Line-of-best-fit-(15-points)">¶</a></h3><p>Use NumPy and linear algebra to find the slope and intercept of the line of best fit. Print out the final vector. Then, in a markdown cell, address <strong>in detail</strong> the following:</p>
+<ol>
+<li>What is the interpretation of the slope and intercept in the context of this problem?</li>
+<li>Explain in a few sentences why this operation is the same thing as "projecting $y$ onto the span of $X$".</li>
+</ol>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=47a95648-1129-44d1-b0c9-cbe440950c22">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7817,7 +7814,13 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">df_fifa</span><span class="o">.</span><span class="n">Nationality</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">y</span> <span class="o">=</span> <span class="n">recipe_df</span><span class="p">[</span><span class="s1">'Total Fat'</span><span class="p">]</span><span class="o">.</span><span class="n">to_numpy</span><span class="p">()</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">vstack</span><span class="p">([</span><span class="n">recipe_df</span><span class="o">.</span><span class="n">Cholesterol</span><span class="o">.</span><span class="n">to_numpy</span><span class="p">(),</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">recipe_df</span><span class="o">.</span><span class="n">Cholesterol</span><span class="p">))])</span><span class="o">.</span><span class="n">T</span>
+<span class="n">beta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">inv</span><span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">T</span> <span class="o">@</span> <span class="n">X</span><span class="p">)</span> <span class="o">@</span> <span class="n">X</span><span class="o">.</span><span class="n">T</span> <span class="o">@</span> <span class="n">y</span>
+
+<span class="n">beta</span>
 </pre></div>
 </div>
 </div>
@@ -7830,699 +7833,19 @@ a.anchor-link {
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>Nationality
-England        1652
-Germany        1209
-Spain          1054
-France          936
-Argentina       930
-               ... 
-Saint Lucia       1
-Kazakhstan        1
-Vietnam           1
-Niger             1
-Singapore         1
-Name: count, Length: 161, dtype: int64</pre>
+<pre>array([0.18437883, 9.21885897])</pre>
 </div>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">df_fifa</span><span class="o">.</span><span class="n">shape</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[8]:</div>
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>(18360, 89)</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">df_fifa</span><span class="p">[</span><span class="s1">'Age'</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>array([34, 35, 23, 31, 33, 30, 36, 37, 28, 29, 27, 25, 32, 21, 26, 24, 19,
-       22, 40, 20, 39, 38, 44, 17, 41, 18, 42, 43, 16])</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">df_filtered</span> <span class="o">=</span> <span class="n">df_fifa</span><span class="p">[</span><span class="n">df_fifa</span><span class="p">[</span><span class="s1">'Nationality'</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="s1">'England'</span><span class="p">,</span> <span class="s1">'Germany'</span><span class="p">,</span> <span class="s1">'Spain'</span><span class="p">])]</span>
-
-<span class="n">df_grouped</span> <span class="o">=</span> <span class="n">df_filtered</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">'Nationality'</span><span class="p">,</span> <span class="s1">'Age'</span><span class="p">])[</span><span class="s1">'Overall'</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
-
-<span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">df_grouped</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">'Age'</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">'Overall'</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'Nationality'</span><span class="p">,</span>
-                 <span class="n">labels</span><span class="o">=</span><span class="p">{</span><span class="s1">'Overall'</span><span class="p">:</span> <span class="s1">'Mean Overall Rating'</span><span class="p">,</span> <span class="s1">'Age'</span><span class="p">:</span> <span class="s1">'Player Age'</span><span class="p">})</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=2df06481-9caf-4254-8e4d-fd80d8c632fd">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Part-1.2:-Numerical-Summaries-(10-points)">Part 1.2: Numerical Summaries (10 points)<a class="anchor-link" href="#Part-1.2:-Numerical-Summaries-(10-points)">¶</a></h2><ol>
-<li>Calculate the sample mean and median of <code>Overall</code> for the entire data set. In a markdown cell, discuss what their relative values imply about the distribution of <code>Overall</code>, and then use the plot from 1.1 and these values to discuss whether you think English, German, and Spanish players are generally better rated than other country's players, and at what age do they become average players?</li>
-<li>Calculate the <code>.group_by()</code> function to calculate the means and standard deviations of <code>Overall</code> for the three Nationalities in Part 1.1 (you will want to use the original data frame or a slightly modified version of it (the <code>.isin</code> function from pandas may help), <strong>NOT</strong> the data frame you used for the plot). What do these values tell you about the differences between English, German, and Spanish players?</li>
-<li>Create a subset of the original data frame that includes only <code>Age</code>, <code>Height</code>, <code>Weight</code>, and <code>Overall</code>. Calculate the correlation matrix for these four features and discuss what the relationships seem to be and whether those relationships make sense to you.</li>
-</ol>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">mean</span> <span class="o">=</span> <span class="n">df_fifa</span><span class="p">[</span><span class="s1">'Overall'</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
-<span class="n">median</span> <span class="o">=</span> <span class="n">df_fifa</span><span class="p">[</span><span class="s1">'Overall'</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"mean </span><span class="si">{</span><span class="n">mean</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"median </span><span class="si">{</span><span class="n">median</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
-
-<span class="n">df</span> <span class="o">=</span> <span class="n">df_fifa</span><span class="p">[</span><span class="n">df_fifa</span><span class="p">[</span><span class="s1">'Nationality'</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="s1">'England'</span><span class="p">,</span> <span class="s1">'Germany'</span><span class="p">,</span> <span class="s1">'Spain'</span><span class="p">])]</span>
-<span class="n">grouped_stats</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">'Nationality'</span><span class="p">)[</span><span class="s1">'Overall'</span><span class="p">]</span><span class="o">.</span><span class="n">agg</span><span class="p">([</span><span class="s1">'mean'</span><span class="p">,</span> <span class="s1">'median'</span><span class="p">])</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"grouped stats </span><span class="se">\n</span><span class="si">{</span><span class="n">grouped_stats</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
-
-<span class="n">df_subset</span> <span class="o">=</span> <span class="n">df_fifa</span><span class="p">[[</span><span class="s1">'Age'</span><span class="p">,</span> <span class="s1">'Height'</span><span class="p">,</span> <span class="s1">'Weight'</span><span class="p">,</span> <span class="s1">'Overall'</span><span class="p">]]</span>
-<span class="n">corr_matrix</span> <span class="o">=</span> <span class="n">df_subset</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\n</span><span class="s2">matrix </span><span class="se">\n</span><span class="si">{</span><span class="n">corr_matrix</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>mean 65.83267973856209
-median 66.0
-grouped stats 
-  Nationality       mean  median
-0     England  63.865617    63.0
-1     Germany  65.635236    65.0
-2       Spain  69.163188    68.0
-
-matrix 
-              Age    Height    Weight   Overall
-Age      1.000000  0.064194  0.212254  0.442932
-Height   0.064194  1.000000  0.756610  0.031366
-Weight   0.212254  0.756610  1.000000  0.124180
-Overall  0.442932  0.031366  0.124180  1.000000
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<ol>
-<li>The median and the mean suggest that from the database and all the nationality, the mean and medium are in their mid 60s</li>
-<li>By getting the specifict nationality we can break down the the mean and the median, by showing us england is the youngest, and spain is the oldest having germany in the middle, they all have around 2-3 in difference</li>
-</ol>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Part-2:-Vector-Geometry-Practice-(20-points)">Part 2: Vector Geometry Practice (20 points)<a class="anchor-link" href="#Part-2:-Vector-Geometry-Practice-(20-points)">¶</a></h1><p>Use the vectors to below to compute the following quantities. You must show all math work/steps (no matter how trivial) to receive full credit. You may either use LaTeX typesetting within a Markdown cell, or do it by hand with pen and paper and embed the image in this .ipynb file, or submit a separate pdf file with your handwritten work. Round all decimals to three places.</p>
-<p>After calculating the quantities by hand, use numpy in cells below to verify your answers.</p>
-<p>$a = \begin{bmatrix} 2 \\ -1 \\ 3 \end{bmatrix}$</p>
-<p>$b = \begin{bmatrix} -4 \\ -2 \\ 0 \end{bmatrix}$</p>
-<p>$c = \begin{bmatrix} 3 \\ 3 \\ -3 \end{bmatrix}$</p>
-<ol>
-<li>Compute $||b+c||$</li>
-<li>Compute $2a + b$</li>
-<li>Compute $c \cdot a$</li>
-<li>Compute $||\frac{a}{2} - c||$</li>
-<li>Compute $b \cdot (a + c)$</li>
-</ol>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><img alt="alt text" src="2.1.PNG"/>
-<img alt="alt text" src="2.2.PNG"/>
-<img alt="alt text" src="2.3.PNG"/>
-<img alt="alt text" src="2.4.PNG"/>
-<img alt="alt text" src="2.5.PNG"/></p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-
-<span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
-<span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="o">-</span><span class="mi">4</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
-<span class="n">c</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="p">])</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">b_plus_c</span> <span class="o">=</span> <span class="n">b</span> <span class="o">+</span> <span class="n">c</span>
-<span class="n">magnitude</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">b_plus_c</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"||b + c|| ="</span><span class="p">,</span> <span class="n">magnitude</span><span class="p">)</span>
-
-<span class="n">times_add</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"2a + b ="</span><span class="p">,</span> <span class="n">times_add</span><span class="p">)</span>
-
-<span class="n">dot</span><span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"c x a ="</span><span class="p">,</span> <span class="n">dot</span><span class="p">)</span>
-
-<span class="n">a_div_2_minus_c</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span> <span class="o">-</span> <span class="n">c</span>
-<span class="n">magnitude</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">a_div_2_minus_c</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"||a/2 - c|| ="</span><span class="p">,</span> <span class="n">magnitude</span><span class="p">)</span>
-
-<span class="c1"># 5. Compute b · (a + c)</span>
-<span class="n">dot</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">a</span> <span class="o">+</span> <span class="n">c</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"b · (a + c) ="</span><span class="p">,</span> <span class="n">dot</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>||b + c|| = 3.3166247903554
-2a + b = [ 0 -4  6]
-c x a = -6
-||a/2 - c|| = 6.041522986797286
-b · (a + c) = -24
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Part-3:-Computation-by-Hand">Part 3: Computation by Hand<a class="anchor-link" href="#Part-3:-Computation-by-Hand">¶</a></h1><p>For each of the sub-parts below, you must show all math work/steps (no matter how trivial) to receive full credit. You may either use LaTeX typesetting within a Markdown cell, or do it by hand with pen and paper and embed the image in this .ipynb file, or submit a separate pdf file with your handwritten work. Round all decimals to three places.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Part-3.1:-Matrix-Multiplication-(10-points)">Part 3.1: Matrix Multiplication (10 points)<a class="anchor-link" href="#Part-3.1:-Matrix-Multiplication-(10-points)">¶</a></h2><p>Using the below matrices, perform the following operations by hand, <strong>then</strong> perform the same operations in your notebook using <code>numpy</code>. If an operation cannot be done, still write the code but then comment it out before running and submitting your final .ipynb file.</p>
-<p>$$A = \begin{bmatrix}
--3 &amp; 8 \\
-0 &amp; 5
-\end{bmatrix}$$</p>
-<p>$$B = \begin{bmatrix}
-2 &amp; -7 \\
-6 &amp; -1 \\
--9 &amp; 4 \end{bmatrix}$$</p>
-<p>$$C = \begin{bmatrix}
--6 &amp; 0 &amp; 5 \\
-1 &amp; 3 &amp; -2 \\
-7 &amp; -5 &amp; -8 \\
-4 &amp; 9 &amp; -10
-\end{bmatrix}$$</p>
-<p>$$D = \begin{bmatrix}
--4 &amp; 0 &amp; 3 \\
-8 &amp; -2 &amp; 5 \\
-6 &amp; -3 &amp; 1
-\end{bmatrix}$$</p>
-<p>$$e = \begin{bmatrix}
-7 \\
--8 \\
-10 \\
--1
-\end{bmatrix}$$</p>
-<ul>
-<li>$AB^T$</li>
-<li>$CD$</li>
-<li>$DB$</li>
-<li>$Ce$</li>
-<li>$e^TC$</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><img alt="alt text" src="3.1.PNG"/>
-<img alt="alt text" src="3.2.PNG"/>
-<img alt="alt text" src="3.3.PNG"/></p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<ol start="4">
-<li>is not possible the number of rows need to match the number of columns</li>
-</ol>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><img alt="alt text" src="3.5.PNG"/></p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [15]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="mi">8</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">]])</span>
-<span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">7</span><span class="p">],</span> <span class="p">[</span><span class="mi">6</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mi">9</span><span class="p">,</span> <span class="mi">4</span><span class="p">]])</span>
-<span class="n">C</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="o">-</span><span class="mi">6</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="o">-</span><span class="mi">8</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="o">-</span><span class="mi">10</span><span class="p">]])</span>
-<span class="n">D</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="o">-</span><span class="mi">4</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">8</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span> <span class="p">[</span><span class="mi">6</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">]])</span>
-<span class="n">e</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">7</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mi">8</span><span class="p">],</span> <span class="p">[</span><span class="mi">10</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]])</span>
-
-<span class="n">ABT</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="o">.</span><span class="n">T</span><span class="p">)</span>
-<span class="n">CD</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">C</span><span class="p">,</span> <span class="n">D</span><span class="p">)</span>
-<span class="n">DB</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">D</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span>
-<span class="c1"># Ce = np.dot(C, e)</span>
-<span class="n">eTC</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">e</span><span class="o">.</span><span class="n">T</span><span class="p">,</span> <span class="n">C</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"ABT: </span><span class="si">{</span><span class="n">ABT</span><span class="si">}</span><span class="s2"> </span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"CD: </span><span class="si">{</span><span class="n">CD</span><span class="si">}</span><span class="s2"> </span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Ce NOT POSSIBLE </span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"DB: </span><span class="si">{</span><span class="n">DB</span><span class="si">}</span><span class="s2"> </span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"eTC: </span><span class="si">{</span><span class="n">eTC</span><span class="si">}</span><span class="s2"> </span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>ABT: [[-62 -26  59]
- [-35  -5  20]] 
-
-CD: [[  54  -15  -13]
- [   8    0   16]
- [-116   34  -12]
- [  -4   12   47]] 
-
-Ce NOT POSSIBLE 
-
-DB: [[-35  40]
- [-41 -34]
- [-15 -35]] 
-
-eTC: [[ 16 -83 -19]] 
-
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Part-3.2:-Spans,-Linear-In/Dependence,-Orthogonality-(10-points)">Part 3.2: Spans, Linear In/Dependence, Orthogonality (10 points)<a class="anchor-link" href="#Part-3.2:-Spans,-Linear-In/Dependence,-Orthogonality-(10-points)">¶</a></h2><p>Based on the following three vectors, answer the ensuing questions, making sure to write out all supporting work with by hand or in a markdown cell. You may use <code>numpy</code> to help you check some of your answers, if you wish, but all work must be done by hand and provided for full credit.</p>
-<p>$$a = \begin{bmatrix} 8 \\ -2 \end{bmatrix}$$
-$$b = \begin{bmatrix} 1 \\ 4 \end{bmatrix}$$
-$$c = \begin{bmatrix} -3 \\ .75 \end{bmatrix}$$</p>
-<ul>
-<li>What is the span of $a$ and $b$?</li>
-<li>What is the span of $a$ and $c$?</li>
-<li>Are the vectors $a$ and $b$ linearly independent or dependent?</li>
-<li>Is the set of all three vectors linearly independent or dependent?</li>
-<li>Which vectors are orthogonal to each other?</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><img alt="alt text" src="3.2.1.PNG"/>
-<img alt="alt text" src="3.2.2.PNG"/></p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<ol start="3">
-<li><p>Since a is not a scalar multiple of b, they are linearly independent.</p>
-</li>
-<li><p>delta a + beta b + alpha c = 0. Due to it != it is lineraly independent</p>
-</li>
-<li><p>a*b</p>
-<p>a⋅b=8×1+(−2)×4=8−8=0
-There for it is <strong>orthogonal</strong></p>
-</li>
-</ol>
-<p>a*c</p>
-<pre><code>a⋅c=8×(−3)+(−2)×0.75=−24−1.5=−25.5
-There for it is **not orthogonal**</code></pre>
-<p>b*c</p>
-<pre><code>b⋅c=1×(−3)+4×0.75=−3+3=0
-There for it is **orthogonal**</code></pre>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Part-3.3:-Projections-(5-points)">Part 3.3: Projections (5 points)<a class="anchor-link" href="#Part-3.3:-Projections-(5-points)">¶</a></h2><p>By hand, find the point in the span of $a = \begin{bmatrix} -1 \\ 3 \end{bmatrix}$ that is closest to $b = \begin{bmatrix} 0 \\ -3 \end{bmatrix}$. Make sure to show <strong>all</strong> work by hand, even if you use <code>numpy</code> to verify your answer. <strong>Also, draw a rough sketch</strong> of the operation, including it either as an embedded image in this notebook or in your separate .pdf file.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><img alt="alt text" src="3.3.new.PNG"/>
-<img alt="alt text" src="IMG_0177.PNG"/></p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [16]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-
-<span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
-<span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="p">])</span>
-
-<span class="n">projection</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span> <span class="o">*</span> <span class="n">a</span>
-
-<span class="n">projection</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[16]:</div>
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>array([ 0.9, -2.7])</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Part-3.4:-Line-of-Best-Fit-(10-points)">Part 3.4: Line of Best Fit (10 points)<a class="anchor-link" href="#Part-3.4:-Line-of-Best-Fit-(10-points)">¶</a></h2><p>You are interested in if there is a relationship within your friend group between how many siblings they have and how many dates they've been on. You collect the following data from five of your friends:</p>
-<table>
-<thead>
-<tr>
-<th>siblings</th>
-<th>dates</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>0</td>
-<td>3</td>
-</tr>
-<tr>
-<td>2</td>
-<td>9</td>
-</tr>
-<tr>
-<td>1</td>
-<td>3</td>
-</tr>
-<tr>
-<td>0</td>
-<td>2</td>
-</tr>
-<tr>
-<td>4</td>
-<td>6</td>
-</tr>
-</tbody>
-</table>
-<p>Find the line of best fit, by hand, for the relationship treating number of siblings as the $x$ feature and number of dates as the $y$ feature. Be sure to include an intercept term. You may verify your answer using <code>numpy</code>, but must show all work by hand.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><img alt="alt text" src="3.4.PNG"/></p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>a# Part 4: Eigenvalues and Eigenvectors (20 points)</p>
-<p>Show all math work/steps (no matter how trivial) to receive full credit. You may either use LaTeX typesetting within a Markdown cell, or do it by hand with pen and paper and embed the image in this .ipynb file, or submit a separate pdf file with your handwritten work. Round all decimals to three places.</p>
-<p>Find the eigenvalues and eigenvectors for the following matrices by hand, <strong>then</strong> find them in your notebook using <code>numpy</code>:</p>
-<p>$$A = \begin{bmatrix}
-    -6 &amp; 3 \\ 4 &amp; 5
-\end{bmatrix}$$</p>
-<p>$$B = \begin{bmatrix}
-    5 &amp; 6 \\ 2 &amp; 1
-\end{bmatrix}$$</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [17]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="o">*</span>
-
-<span class="n">λ</span> <span class="o">=</span> <span class="n">symbols</span><span class="p">(</span><span class="s1">'λ'</span><span class="p">)</span>
-
-<span class="n">A_sym</span> <span class="o">=</span> <span class="n">Matrix</span><span class="p">([[</span><span class="o">-</span><span class="mi">6</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]])</span>
-<span class="n">B_sym</span> <span class="o">=</span> <span class="n">Matrix</span><span class="p">([[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">]])</span>
-
-<span class="n">char_poly_A</span> <span class="o">=</span> <span class="n">A_sym</span><span class="o">.</span><span class="n">charpoly</span><span class="p">(</span><span class="n">λ</span><span class="p">)</span>
-<span class="n">eigenvalues_A_sym</span> <span class="o">=</span> <span class="n">solve</span><span class="p">(</span><span class="n">char_poly_A</span><span class="o">.</span><span class="n">as_expr</span><span class="p">(),</span> <span class="n">λ</span><span class="p">)</span>
-
-<span class="n">char_poly_B</span> <span class="o">=</span> <span class="n">B_sym</span><span class="o">.</span><span class="n">charpoly</span><span class="p">(</span><span class="n">λ</span><span class="p">)</span>
-<span class="n">eigenvalues_B_sym</span> <span class="o">=</span> <span class="n">solve</span><span class="p">(</span><span class="n">char_poly_B</span><span class="o">.</span><span class="n">as_expr</span><span class="p">(),</span> <span class="n">λ</span><span class="p">)</span>
-
-<span class="n">eigenvectors_A_sym</span> <span class="o">=</span> <span class="p">[</span><span class="n">A_sym</span><span class="o">.</span><span class="n">eigenvects</span><span class="p">()[</span><span class="n">i</span><span class="p">][</span><span class="mi">2</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">A_sym</span><span class="o">.</span><span class="n">eigenvects</span><span class="p">()))]</span>
-
-<span class="n">eigenvectors_B_sym</span> <span class="o">=</span> <span class="p">[</span><span class="n">B_sym</span><span class="o">.</span><span class="n">eigenvects</span><span class="p">()[</span><span class="n">i</span><span class="p">][</span><span class="mi">2</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">B_sym</span><span class="o">.</span><span class="n">eigenvects</span><span class="p">()))]</span>
-
-<span class="n">eigenvalues_A_sym</span>
-<span class="n">eigenvectors_A_sym</span>
-
-<span class="n">eigenvalues_B_sym</span>
-<span class="n">eigenvectors_B_sym</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[17]:</div>
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>[Matrix([
- [-1],
- [ 1]]),
- Matrix([
- [3],
- [1]])]</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><img alt="alt text" src="4.1.PNG"/>
-<img alt="alt text" src="4.2.PNG"/>
-<img alt="alt text" src="4.3.PNG"/>
-<img alt="alt text" src="4.4.PNG"/></p>
+<p>The slope shows how much total fat increseases for every cholesterol it increases. Solving for the slope and intercept using linear algebra is equivalent to projecting the vector of Total Fat values onto the space spanned by Cholesterol and a constant intercept.</p>
 </div>
 </div>
 </div>
